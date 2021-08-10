@@ -1,0 +1,42 @@
+.table {
+    width: 100%;
+    table-layout: fixed;
+
+    @media (max-width: 568px) {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        border: 1px solid #000;
+        word-wrap: break-word;
+    }
+
+    th {
+        padding: 10px;
+        background-color: #caf0ec;
+        color: #14877c;
+    }
+
+    td {
+        padding: 5px;
+        text-align: center;
+    }
+
+    tr:nth-child(even) {
+        background-color: #e0e0e0;
+    }
+
+    &__avatar {
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+            @media (max-width: 568px) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
